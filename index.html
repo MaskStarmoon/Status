@@ -152,7 +152,7 @@
         function submitName() {
             const name = document.getElementById("nameInput").value;
             if (name) {
-                fetch("/getRandomData")
+                fetch("/api/getRandomData")
                     .then((response) => response.json())
                     .then((data) => {
                         const resultDiv = document.getElementById("result");

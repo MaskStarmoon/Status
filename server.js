@@ -51,7 +51,7 @@ function getRandomNote() {
 }
 
 // Untuk menyajikan file HTML
-app.use(express.static(path.join(__dirname, "html")));
+app.use(express.static(path.join(__dirname, "./index.html")));
 
 // Endpoint untuk mendapatkan data acak
 app.get("/getRandomData", (req, res) => {
